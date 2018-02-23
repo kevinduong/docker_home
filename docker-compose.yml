@@ -34,4 +34,6 @@ services:
       - "8123:8123"
     volumes:
       - /home/$USER/docker_files/homeassistant/config:/config
+    devices:
+      - "/dev/bus/usb/002/006:/dev/bus/usb/002/006"
     network_mode: "host"
