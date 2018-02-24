@@ -35,5 +35,6 @@ services:
     volumes:
       - /home/$USER/docker_files/homeassistant/config:/config
     devices:
-      - "/dev/bus/usb/002/006:/dev/bus/usb/002/006"
+      - "/dev/ttyUSB0:/dev/ttyUSB0"
+      - "/dev/ttyUSB1:/dev/ttyUSB1"
     network_mode: "host"
